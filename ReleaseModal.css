@@ -1,0 +1,196 @@
+.release-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.release {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.release-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    max-width: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc; /* Add border with desired style and color */
+    box-sizing: border-box; /* Include border in the element's total width and height */
+}
+
+
+.release-head {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.release-head h6 {
+    margin: 0;
+    font-size: 24px; /* Increase font size for better visibility */
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    flex: 1;
+}
+
+.release-close-btn {
+    cursor: pointer;
+    font-size: 24px;
+    color: #999;
+    transition: color 0.3s ease; /* Add transition effect */
+}
+
+.release-close-btn:hover {
+    color: #333; /* Change color on hover */
+}
+
+.release-close-btn:hover {
+    color: #555; /* Change color on hover */
+}
+
+.release-items {
+    flex: 1;
+    overflow-y: auto; /* Add vertical scrollbar */
+    overflow-x: auto; /* Add horizontal scrollbar */
+    padding: 2%; /* Add padding to create space for scrollbar */
+    max-height: 500px; /* Set a maximum height for the container */
+}
+
+.release-items::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.release-items::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the track */
+}
+
+.release-items::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners for the scrollbar thumb */
+}
+
+.release-items::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the scrollbar thumb on hover */
+}
+
+
+.release-items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.releasing-item-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 2px solid #eee; /* Adjust border-bottom thickness */
+    position: relative;
+}
+
+.releasing-item-info:last-child {
+    border-bottom: none;
+}
+
+.releasing-item-info:hover {
+    background-color: #d3d3d3; /* Change background color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.item-info,
+.client-info {
+    padding: 10px;
+}
+
+.client-info {
+    text-align: right;
+    overflow-y: auto; /* Add vertical scrolling only */
+    max-height: 200px; /* Set a maximum height for the client section */
+    border-right: none; /* Remove border from the right of client-info */
+}
+
+.item-info {
+    min-width: 120px; /* Set a fixed width for "ITEM" */
+}
+
+.release-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.release-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.reserve-item-release {
+    background-color: #0baa5d;
+    color: #fff;
+    margin-right: 2px; /* Add margin to separate the buttons */
+}
+
+.reserve-item-release:hover {
+    background-color: #00bf63;
+}
+
+.reserve-item-delete {
+    background-color: #f23513;
+    color: #fff;
+    border: 1px solid #f23513;
+    margin-right: 5px; /* Add margin to separate the buttons */
+}
+
+.reserve-item-delete:hover {
+    background-color: #d2320f; /* Darker shade of red on hover */
+}
+
+.release-container,
+.release,
+.release-content,
+.release-head h6,
+.release-close-btn,
+.item-info,
+.client-info,
+.release-buttons button,
+.reserve-item-release,
+.reserve-item-delete {
+    font-family: 'Roboto', sans-serif;
+}
+
+.border-box {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
